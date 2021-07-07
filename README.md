@@ -30,6 +30,9 @@ You can follow a video tutorial [here](https://youtu.be/wyYK82C6W88) if it's mor
 
 - To get started, please run the following commands:
     ```bash
+    git clone --recursive https://github.com/bycloudai/3d-photo-inpainting-Windows.git
+    cd 3d-photo-inpainting-Windows
+
     conda create -n 3DP python=3.7
     conda activate 3DP
     conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit=10.2 -c pytorch
@@ -40,14 +43,6 @@ You can follow a video tutorial [here](https://youtu.be/wyYK82C6W88) if it's mor
     pip install pyqt5
     ```
     If you cannot install Cython successfully, please install VS C++ Toolkit. Tutorial [here](https://www.notion.so/How-To-Install-Microsoft-C-Build-Tools-f79ca6796a524674878b80e998c88b02).
-- Next, clone this [page](https://github.com/compphoto/BoostingMonocularDepth.git)
-
-    Unzip, drag and drop it here:
-    ```
-    📂3d-photo-inpainting/
-    ├── 📂BoostingMonocularDepth/ <--
-    │...
-    ```
     
 - Next, please download the following models & weights and put them in the right file directory:
     - [color-model.pth](https://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/model/color-model.pth)
